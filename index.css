@@ -9,7 +9,7 @@ body {
 section {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 30px 20px;
+    padding: 35px 10px;
 }
 
 hr {
@@ -26,7 +26,7 @@ p {
 }
 
 button {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     background-color: blue;
     padding: 15px;
@@ -35,7 +35,7 @@ button {
     cursor: pointer;
     text-decoration: none;
     transition-duration: 1s;
-    margin-top: 15px;
+    margin: 15px 0;
 }
 
 button:hover, button:active {
@@ -68,7 +68,7 @@ nav {
 h1 {
     font-size: 30px;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #subheader {
@@ -79,13 +79,12 @@ h1 {
 }
 
 .animation {
-    width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .animation img {
-    width: 400px;
+    max-width: 350px;
 }
 
 /* Past Work */
