@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./index.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <!-- Start Of Reviews Section -->
+        <style>
+            #reviews {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                text-align: left;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .review {
+                width: 160px;
+                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                margin: 5px;
+                border-radius: 10px;
+            }
+            .review > img {
+                width: 100%;
+                border-radius: 10px 10px 0 0;
+            }
+            .content {
+                padding: 10px;
+            }
+            .user {
+                display: flex;
+            }
+            .picture {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+            .name {
+                font-weight: bold;
+                font-size: 14px;
+            }
+            .date {
+                font-size: 12px;
+                color: darkgrey;
+            }
+            .rating {
+                margin: 10px 0;
+                color: blue;
+            }
+            .quote {
+                font-size: 14px;
+            }
+        </style>
+        <div id="reviews">
+        </div>
+        <script>
+            const reviews = [
+                { shopifyResult: '1IJbufheR9ofrl0rgNH2F3uMY0IwIWoBj', picture: '1dq0eA0ZNH1kOGiDXyQTsiZU2V9DWMTkJ', name: 'Bonnie Kathi', date: '12/26/2022', rating: 5, quote: "I highly recommend working with the Vujis team. I hired them for 2 video ads and after shipping them my products, they delivered within 2 days. I can't wait to work with them again." },
+                { shopifyResult: '1ILpGO6xcxHJXiknOnaPkQWtQmb7ZIjtI', picture: '1e-oAQIEK5Y67yRpNSmMGC0jsgBE01z0d', name: 'Eddie Brown', date: '1/2/2023', rating: 5, quote: "This was the first time I worked with them and they did an excellent job. I ran the videos they produced for me as ads on TikTok and I managed to secure a 5x return on ad spend!" },
+                { shopifyResult: '1IcQQGlocWwhWABlP4Hi5WJVO6u0fEV5j', picture: '1eNP8OvnnrFNbo_cG-2WJdatUZomIjzJZ', name: 'Ollie Nolan', date: '12/27/2022', rating: 5, quote: "My results after buying 4 videos from them - thanks guys!" },
+                { shopifyResult: '1If9fOG9J7DUPJpKlkvTDnCnS3A8TEaC5', picture: '1fgCvWpsJsxpK4qSPlrf-b542Vzx5pZQh', name: 'Ian Cheung', date: '12/27/2022', rating: 5, quote: "I've used these guys several times and it's much cheaper than hiring an agency or influencer directly. They delivered the videos very quickly and I can't recommend them enough." },
+                { shopifyResult: '1IknYi73Y-Xaq0gDjpQDgTZc2eizR7PYB', picture: '1e8Yybj7Go-UK6et-lVJYXroCMPZDTH-J', name: 'Kyle Watson', date: '3/1/2023', rating: 5, quote: "I ordered just one video ad with background music & subtitles and you can tell the creator put a lot of effort into it. Thanks again!"},
+                { shopifyResult: '1IlYpGlqZiLKFbOZHzk5moUCAIbX5fsAK', picture: '1eCHuJK9h_M0oBXeDKx-RbLchXwQt7h7T', name: 'Marilyn Narelle', date: '12/23/2022', rating: 5, quote: "Got my first sale using one of their videos. I'm expecting many more to come!" },
+                { shopifyResult: '1Kj7MRsIvDsAf5QrsHpj-an4_ZcbCQ1E9', picture: '1eP6ST-ZedN7eTSDlTH5lKgZxcWKi1kae', name: 'Tobias Neal', date: '12/20/2022', rating: 5, quote: "Got a decent amount of sales from running their video ads. Although the store wasn't profitable, their ads were top-notch." },
+                { shopifyResult: '1KpS24iulC85PrCh3io1MqRpI51QY5n2r', picture: '1fDSMRdlLY8DiOVDOcP7i11sdl-PW_w87', name: 'Maria Hernandez', date: '12/20/2022', rating: 5, quote: "As promised, here are my Shopify results from using your ads." }
+            ]
+            document.getElementById('reviews').innerHTML = reviews.sort((a, b) => new Date(b.date) - new Date(a.date)).map(review => 
+                `<div class="review">
+                    <img src="https://drive.google.com/uc?export=view&id=${review.shopifyResult}"/>
+                    <div class="content">
+                        <div class="user">
+                            <img class="picture" src="https://drive.google.com/uc?export=view&id=${review.picture}"/>
+                            <div>
+                                <div class="name">${review.name}</div>
+                                <div class="date">${review.date}</div>
+                            </div>
+                        </div>
+                        <div class="rating">${'★'.repeat(review.rating)}</div>
+                        <div class="quote">${review.quote}</div>
+                    </div>
+                </div>`
+            ).join('')
+        </script>
+        <!-- End Of Reviews Section -->
+
+        <!-- Start Of Videos Section -->
+        <section id="example-video-ads">
+            <div class="title">Past Work</div>
+            <div id="videos"></div>
+        </section>
+        <style>
+            #example-video-ads {
+                margin: 50px 0;
+            }
+            .title {
+                font-size: 30px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+            #videos {
+                max-width: 1000px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 30px auto;
+            }
+            #videos video {
+                width: 160px;
+                border-radius: 10px;
+                margin: 5px;
+            }
+        </style>
+        <script>
+            const videos = [
+                '1To_1vR7VhgZsSeNFdJPUrOfqWorppllr',
+                '1JXtU053NM4qC-5P8ETOPgo4Kv3y7PIcb', 
+                '1Ipfc5sgR7uDQ9fi5-3Vs3HeigXh_j_Q-', 
+                '1J9wDMmHfibEohMIA2A3unCx2CpfWh8FW',
+                '1JPqS6eSBt_oc4BQlVMwozJGqcQ1wqWEc',
+                '1KG_4XJ2r9-0CDswDN0VNx0Yl5d-nlXfo',
+                '1JidZleD-kXt0CvRh6n_B-N2-EEkDuYyE',
+                '1K5CG1Gw0I2CoFzhXVPbPUVuHqkkW5Cu-',
+                '1KC-JedqUfCJ0OhR0Dx9GcWcvCwE6IPxS',
+                '1KObS6kdSssDLrg26AGmMycyti3GfVFPu',
+                '1C2pMiiktT6UOBk912bAidHuH9JLoNtUu',
+                '1JdaudZUmYWQ0i4Rto8VA1zeX0g7QeSAF',
+                '1KlrFd2xTUgyYlqR9EyrtnpbyquCUBurQ',
+                '1KdrQlqypDilEfIHufQGXWb6KWVKUoN_W',
+                '1Ki36VRRJd1AC0JWkMZLSk4fKHC46tBMN',
+                '1LJy3gcefiIaI3v85h12d34dBdqVqN3HE'
+            ] // TO-DO: add more videos
+            document.getElementById('videos').innerHTML = videos.map(video => 
+                `<video controls controlsList="nodownload">
+                    <source src="https://drive.google.com/uc?export=view&id=${video}"/>
+                </video>`
+            ).join('')
+        </script>
+        <!-- End Of Videos Section -->
+    </body>
+</html>

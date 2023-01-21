@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+
+body {
+    font-family: arial;
+    width: 100%;
+    text-align: center;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+hr {
+    margin: 50px 0;
+}
+
+p {
+    color: grey;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: 25px;
+    color: white;
+    background-color: blue;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 1s;
+    margin-top: 15px;
+}
+
+button:hover, button:active {
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+    transition-duration: 0.5s;
+}
+
+.logo {
+    font-family: chango;
+    font-size: 25px;
+    color: blue;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+
+nav {
+    padding-top: 15px;
+}
+
+/* Hero Section */
+
+#hero {
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#subheader {
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.animation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.animation img {
+    width: 400px;
+}
+
+/* Past Work */
+
+#past-work {
+    background-color: whitesmoke;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown select {
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px darkgrey;
+}
+
+#videos {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#videos > div {
+    text-align: center;
+}
+
+#videos video {
+    width: 160px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.brand-name {
+    color: black;
+}
+
+/* How We Work */
+
+#how-we-work p {
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Video Testimonials */
+
+#video-testimonials {
+    background-color: whitesmoke;
+}
+
+.video-testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.video-testimonials iframe {
+    width: 160px;
+    height: auto;
+    margin: 5px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 40px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 15px;
+}
+
+footer a, footer p {
+    color: grey;
+}
