@@ -10,6 +10,7 @@ section {
     max-width: 1000px;
     margin: 0 auto;
     padding: 35px 10px;
+    box-sizing: border-box;
 }
 
 hr {
