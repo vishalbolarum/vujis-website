@@ -38,3 +38,32 @@ const changeVideos = () => {
 
 // Initial videos displayed
 changeVideos()
+
+
+// Reviews Section
+const reviews = [
+    { shopifyResult: '1IJbufheR9ofrl0rgNH2F3uMY0IwIWoBj', picture: '1dq0eA0ZNH1kOGiDXyQTsiZU2V9DWMTkJ', name: 'Bonnie Kathi', date: '12/26/2022', rating: 5, quote: "I highly recommend working with the Vujis team. I hired them for 2 video ads and after shipping them my products, they delivered within 2 days. I can't wait to work with them again." },
+    { shopifyResult: '1ILpGO6xcxHJXiknOnaPkQWtQmb7ZIjtI', picture: '1e-oAQIEK5Y67yRpNSmMGC0jsgBE01z0d', name: 'Eddie Brown', date: '1/2/2023', rating: 5, quote: "This was the first time I worked with them and they did an excellent job. I ran the videos they produced for me as ads on TikTok and I managed to secure a 5x return on ad spend!" },
+    { shopifyResult: '1IcQQGlocWwhWABlP4Hi5WJVO6u0fEV5j', picture: '1eNP8OvnnrFNbo_cG-2WJdatUZomIjzJZ', name: 'Ollie Nolan', date: '12/27/2022', rating: 5, quote: "My results after buying 4 videos from them - thanks guys!" },
+    { shopifyResult: '1If9fOG9J7DUPJpKlkvTDnCnS3A8TEaC5', picture: '1fgCvWpsJsxpK4qSPlrf-b542Vzx5pZQh', name: 'Ian Cheung', date: '12/27/2022', rating: 5, quote: "I've used these guys several times and it's much cheaper than hiring an agency or influencer directly. They delivered the videos very quickly and I can't recommend them enough." },
+    { shopifyResult: '1IknYi73Y-Xaq0gDjpQDgTZc2eizR7PYB', picture: '1e8Yybj7Go-UK6et-lVJYXroCMPZDTH-J', name: 'Kyle Watson', date: '3/1/2023', rating: 5, quote: "I ordered just one video ad with background music & subtitles and you can tell the creator put a lot of effort into it. Thanks again!"},
+    { shopifyResult: '1IlYpGlqZiLKFbOZHzk5moUCAIbX5fsAK', picture: '1eCHuJK9h_M0oBXeDKx-RbLchXwQt7h7T', name: 'Marilyn Narelle', date: '12/23/2022', rating: 5, quote: "Got my first sale using one of their videos. I'm expecting many more to come!" },
+    { shopifyResult: '1Kj7MRsIvDsAf5QrsHpj-an4_ZcbCQ1E9', picture: '1eP6ST-ZedN7eTSDlTH5lKgZxcWKi1kae', name: 'Tobias Neal', date: '12/20/2022', rating: 5, quote: "Got a decent amount of sales from running their video ads. Although the store wasn't profitable, their ads were top-notch." },
+    { shopifyResult: '1KpS24iulC85PrCh3io1MqRpI51QY5n2r', picture: '1fDSMRdlLY8DiOVDOcP7i11sdl-PW_w87', name: 'Maria Hernandez', date: '12/20/2022', rating: 5, quote: "As promised, here are my Shopify results from using your ads." }
+]
+document.getElementById('reviews').innerHTML = reviews.sort((a, b) => new Date(b.date) - new Date(a.date)).map(review => 
+    `<div class="review">
+        <img src="https://drive.google.com/uc?export=view&id=${review.shopifyResult}"/>
+        <div class="content">
+            <div class="user">
+                <img class="picture" src="https://drive.google.com/uc?export=view&id=${review.picture}"/>
+                <div>
+                    <div class="name">${review.name}</div>
+                    <div class="date">${review.date}</div>
+                </div>
+            </div>
+            <div class="rating">${'&#9733;'.repeat(review.rating)}</div>
+            <div class="quote">${review.quote}</div>
+        </div>
+    </div>`
+).join('')
