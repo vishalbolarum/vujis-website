@@ -157,32 +157,13 @@ h2 {
 }
 
 #videos video {
-    width: 160px;
+    width: 150px;
     border-radius: 10px;
     margin: 5px;
 }
 
 .brand-name {
     color: black;
-}
-
-/* Video Testimonials */
-
-#video-testimonials {
-    background-color: whitesmoke;
-}
-
-.video-testimonials {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 25px;
-}
-
-.video-testimonials iframe {
-    width: 160px;
-    height: auto;
-    margin: 5px;
 }
 
 /* Reviews Section */
@@ -198,7 +179,7 @@ h2 {
     text-align: left;
 }
 .review {
-    width: 160px;
+    width: 150px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     margin: 5px;
     border-radius: 10px;
