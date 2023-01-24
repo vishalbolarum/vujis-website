@@ -4,17 +4,14 @@ body {
     font-family: arial;
     width: 100%;
     text-align: center;
+    margin: 0;
 }
 
 section {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 35px 10px;
+    padding: 30px 10px;
     box-sizing: border-box;
-}
-
-hr {
-    margin: 50px 0;
 }
 
 p {
@@ -94,7 +91,28 @@ h1 {
     background-color: whitesmoke;
 }
 
-#the-process p {
+.steps > div {
+    max-width: 550px;
+    margin: 10px auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px lightgrey;
+}
+
+.steps img {
+    width: 30px;
+    padding: 5px;
+}
+
+.steps p {
+    font-size: 15px;
+    text-align: left;
+    margin: 0;
+    padding: 5px;
     color: black;
 }
 
