@@ -88,11 +88,17 @@ h1 {
     max-width: 350px;
 }
 
-/* Past Work */
+/* How Does It Work? */
 
-#past-work {
+#the-process {
     background-color: whitesmoke;
 }
+
+#the-process p {
+    color: black;
+}
+
+/* Past Work */
 
 h2 {
     font-size: 30px;
@@ -133,13 +139,6 @@ h2 {
 
 .brand-name {
     color: black;
-}
-
-/* How We Work */
-
-#how-we-work p {
-    font-size: 15px;
-    text-align: center;
 }
 
 /* Video Testimonials */
