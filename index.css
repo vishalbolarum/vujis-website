@@ -90,11 +90,11 @@ h1 {
 /* How Does It Work? */
 
 #the-process {
-    background-color: whitesmoke;
+    background-color: #f6f9fa;
 }
 
 .steps > div {
-    max-width: 550px;
+    max-width: 500px;
     margin: 10px auto;
     background-color: white;
     display: flex;
@@ -160,16 +160,21 @@ h2 {
     width: 150px;
     border-radius: 10px;
     margin: 5px;
+    display: block;
 }
 
 .brand-name {
     color: black;
 }
 
+.brand-logo {
+    height: 30px;
+}
+
 /* Reviews Section */
 
 #results {
-    background-color: whitesmoke;
+    background-color: #f6f9fa;
 }
 
 #reviews {
@@ -178,6 +183,7 @@ h2 {
     flex-wrap: wrap;
     text-align: left;
 }
+
 .review {
     width: 150px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
