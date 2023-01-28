@@ -45,18 +45,27 @@ button:hover, button:active {
     transition-duration: 0.5s;
 }
 
-.logo {
-    font-family: chango;
-    font-size: 25px;
-    color: blue;
-    width: fit-content;
-    margin: 0 auto;
+/* Banner */
+
+.banner {
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
 }
 
 /* Navigation Bar */
 
 nav {
     padding-top: 15px;
+}
+
+.logo {
+    font-family: chango;
+    font-size: 25px;
+    color: blue;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 /* Hero Section */
