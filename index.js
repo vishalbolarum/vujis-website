@@ -1,14 +1,14 @@
 const videos = {
-    apparel_and_accessory: [{ id: '1LVFyQzTzVMDdPzWs0VGUFWdCK9PE-dj7', name: 'Fashion Nova'}, { id: '1OzYH97D_KZEEHkODBzbKqHWX1aDCISDv', name: 'SoulCal' }, { id: '1LTxR_GcC_doHkIpq58bVyqU1ka7nXwAS', name: 'PrettyLittleThing'}, { id: '1M5POO-o6XzbeF_FnxscQhbbxzq4UDlTm', name: 'Will & Charlie' }, { id: '1O7k-c4mA4rKIWI35R6z9R6LNBqK-X0YM', name: 'DivvyUp'}, { id: '1C2pMiiktT6UOBk912bAidHuH9JLoNtUu', name: 'Private'}],
-    cosmetics: [{ id: '1Pgc-R1PVZK7WVjokw-WMi4ARuwqMW6bo', name: 'CHANEL' }, { id: '1JSlsa6g_yb62GjKdBNJ4gWfdhw4TdBO2', name: 'Pixi'}, { id: '1JMQ_TWam8NAx3z-1v3dNRFUpBS73CrBL', name: 'P Louise' }, { id: '1OHjr69RxOc1wYdOeUxWsqDv-ydEppDwP', name: 'florence by mills' }],
-    dental: [{ id: '1My5WbAfb0-iRJ4ifHsVjPRgFdgaj5bXN', name: 'Moon Oral Care'}],
-    eyewear: [{ id: '1PjrhUnLcMRnSbL10409YrkDsfIcmfSCo', name: 'Havaianas' }],
-    food_and_beverage: [{ id: '1N5HBYwAItRmoSOLbiiiTyYYSQlsTAket', name: 'HOP WTR' }, { id: '1J9wDMmHfibEohMIA2A3unCx2CpfWh8FW', name: 'Hard Rock Cafe' }, { id: '1ObLMnK6H1MdM7EVlQTyQqy8WzCCjKe59', name: 'Limited Edition' }, { id: '1OkOWVDPNLYTcsf1Uy5_zSyEjw-70R93i', name: 'SkinTe'}],
-    footwear: [{ id: '1M_AvUFoPWROrNH3mjwYtd_GK3SS5QYDy', name: 'Coddies' }, { id: '1La1K-b9nv-9FZ4C6bKhh-QWouc_FqI8x', name: 'ECCO' }, { id: '1LfQpFHfmZEIS6TI9CMSDBrL0lf61SYiW', name: 'Lemon Jelly' }],
-    fragrance: [{ id: '1JgWFLJER_r1d-zZE4NDJTbSxEO5GbjTB', name: 'Maison Margiela'}, { id: '1KkNT9ekdXx4tctFEuRebHNSMhVlf7F9j', name: 'Each & Every' }],
-    haircare: [{ id: '1OI_ioyGXmaDCJJEE8uSD65aqxoWgLUBG', name: 'Perfect Locks' }, { id: '1MIur0BvnNmaeroMTCFrsfE7XJKZPc6p2', name: 'Follice Revival' }, { id: '1OH3SHQRZYoooHQI3s1rpZZQmND3FONGb', name: 'Kitsch Satin' }, { id: '1MEVmhXK0xNBgfatyVKQ96UycXUELDe-P', name: 'Sally Beauty' }],
+    apparel_and_accessory: [{ id: '1LVFyQzTzVMDdPzWs0VGUFWdCK9PE-dj7', name: 'fashion-nova'}, { id: '1OzYH97D_KZEEHkODBzbKqHWX1aDCISDv', name: 'soulcal' }, { id: '1LTxR_GcC_doHkIpq58bVyqU1ka7nXwAS', name: 'prettylittlething'}, { id: '1M5POO-o6XzbeF_FnxscQhbbxzq4UDlTm', name: 'will-and-charlie' }, { id: '1O7k-c4mA4rKIWI35R6z9R6LNBqK-X0YM', name: 'divvyup'}, { id: '1C2pMiiktT6UOBk912bAidHuH9JLoNtUu', name: 'private' }],
+    cosmetics: [{ id: '1Pgc-R1PVZK7WVjokw-WMi4ARuwqMW6bo', name: 'chanel' }, { id: '1JSlsa6g_yb62GjKdBNJ4gWfdhw4TdBO2', name: 'pixi'}, { id: '1JMQ_TWam8NAx3z-1v3dNRFUpBS73CrBL', name: 'p-louise' }, { id: '1OHjr69RxOc1wYdOeUxWsqDv-ydEppDwP', name: 'florence-by-mills' }],
+    dental: [{ id: '1My5WbAfb0-iRJ4ifHsVjPRgFdgaj5bXN', name: 'moon'}],
+    eyewear: [{ id: '1PjrhUnLcMRnSbL10409YrkDsfIcmfSCo', name: 'havaianas' }],
+    food_and_beverage: [{ id: '1LJy3gcefiIaI3v85h12d34dBdqVqN3HE', name: 'magic-spoon' }, { id: '1J9wDMmHfibEohMIA2A3unCx2CpfWh8FW', name: 'hard-rock-cafe' }, { id: '1ObLMnK6H1MdM7EVlQTyQqy8WzCCjKe59', name: 'Private' }, { id: '1OkOWVDPNLYTcsf1Uy5_zSyEjw-70R93i', name: 'skinte'}],
+    footwear: [{ id: '1M_AvUFoPWROrNH3mjwYtd_GK3SS5QYDy', name: 'coddies' }, { id: '1La1K-b9nv-9FZ4C6bKhh-QWouc_FqI8x', name: 'ecco' }, { id: '1LfQpFHfmZEIS6TI9CMSDBrL0lf61SYiW', name: 'lemon-jelly' }],
+    fragrance: [{ id: '1JgWFLJER_r1d-zZE4NDJTbSxEO5GbjTB', name: 'maison-margiela'}, { id: '1KkNT9ekdXx4tctFEuRebHNSMhVlf7F9j', name: 'each-and-every' }],
+    haircare: [{ id: '1OI_ioyGXmaDCJJEE8uSD65aqxoWgLUBG', name: 'perfect-locks' }, { id: '1MIur0BvnNmaeroMTCFrsfE7XJKZPc6p2', name: 'follicle-revival' }, { id: '1OH3SHQRZYoooHQI3s1rpZZQmND3FONGb', name: 'kitsch-satin' }, { id: '1MEVmhXK0xNBgfatyVKQ96UycXUELDe-P', name: 'Sally Beauty' }],
     jewelry: [],
-    pet: [{ id: '1K04_K36urn7RGGUqoH1COHMDoqzHQpnk', name: 'Poli Pet' }],
+    pet: [{ id: '1K04_K36urn7RGGUqoH1COHMDoqzHQpnk', name: 'poli pet' }],
     skincare: [{ id: '1MXX8UcJon_9SQ_3qOJ-UZFIFAiAIfAqI', name: 'Avarelle' }, { id: '1Nejg13wDA6JxJGqW1XOmqQXU8m-nr-78', name: 'Ferver' }, { id: '1JdaudZUmYWQ0i4Rto8VA1zeX0g7QeSAF', name: 'Doctor Babor' }, { id: '1K5CG1Gw0I2CoFzhXVPbPUVuHqkkW5Cu-', name: 'The Body Shop' }],
     sports: [],
     supplement: [{ id: '1MP__3P0JTLo6-KLhoFYG7yrqO7aNPX6c', name: 'Imarais Beauty' }, { id: '1Pm94Nyy1LYK7xFE0P8PfrOxRj3WYNtzK', name: 'Bulletproof' }, { id: '1MtjMKj2zglgSob8RUH0I1K9RCAGUDLmC', name: 'Javy' }]
@@ -31,7 +31,9 @@ const changeVideos = () => {
             <video controls controlsList="nodownload">
                 <source src="https://drive.google.com/uc?export=view&id=${video.id}"/>
             </video>
-            <p class="brand-name">${video.name}</p>
+            <div class="brand-logo">
+                <img src="./images/brand logos/${video.name}.png"/>
+            </div>
         </div>`
     ).join('')
 }

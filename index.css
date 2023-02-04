@@ -182,22 +182,33 @@ h2 {
 }
 
 #videos > div {
+    width: 150px;
     text-align: center;
+    margin: 5px;
 }
 
 #videos video {
-    width: 150px;
+    width: 100%;
     border-radius: 10px;
-    margin: 5px;
     display: block;
 }
 
-.brand-name {
+.brand-logo {
+    margin: 5px 0;
+    height: 60px;
+    width: 100%;
+    padding: 10px 15px;
     color: black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.brand-logo {
-    height: 30px;
+.brand-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: grayscale(100%);
 }
 
 /* Reviews Section */
@@ -255,7 +266,7 @@ h2 {
 /* Footer */
 
 footer {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 footer p {
@@ -265,4 +276,36 @@ footer p {
 
 footer a, footer p {
     color: grey;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 10px 0;
+}
+
+.social-media-links div {
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#facebook {
+    background-image: url('./images/facebook-grey.png');
+}
+
+#facebook:hover {
+    transition-duration: 1s;
+    background-image: url('./images/facebook-blue.png');
+}
+
+#linkedin {
+    background-image: url('./images/linkedin-grey.png');
+}
+
+#linkedin:hover {
+    transition-duration: 1s;
+    background-image: url('./images/linkedin-blue.png');
 }
