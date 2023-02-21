@@ -1,0 +1,82 @@
+h2 {
+    color: grey;
+    font-size: 40px;
+    margin: 0;
+}
+
+.image-container {
+    border: none;
+    padding: 30px 0px;
+}
+
+.image-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+/* Steps Section */
+
+.steps > div {
+    border-radius: 5px;
+    display: flex;
+    margin: 20px 0;
+}
+
+.steps div img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+h4 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.steps div p {
+    color: grey;
+    font-size: 1rem;
+    margin: 5px 0 0 0;
+}
+
+/* Reviews */
+
+.reviews > div {
+    display: flex;
+    margin: 20px 0;
+}
+
+.reviews > div > img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.person-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.country {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.country .location {
+    color: grey;
+    font-size: 15px;
+    margin: 0;
+}
+
+.country .flag {
+    height: 15px;
+    margin: 0 10px;
+}
+
+.feedback {
+    color: white;
+    font-size: 15px;
+}

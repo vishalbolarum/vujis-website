@@ -1,0 +1,27 @@
+.commodities {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.commodities figure {
+    width: 100px;
+    transition-duration: 1s;
+}
+
+.commodities figure img {
+    width: 100%;
+    filter: invert(100%);
+}
+
+.commodities figure:hover {
+    cursor: pointer;
+    opacity: 0.25;
+    transition-duration: 0.5s;
+}
+
+.commodities figure figcaption {
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+}

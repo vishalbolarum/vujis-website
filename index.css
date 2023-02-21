@@ -7,6 +7,25 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Span */
+
+span.red {
+    color: red;
+}
+
 /* Buttons */
 
 button {
@@ -26,7 +45,6 @@ button.red {
 button.black {
     color: white;
     background-color: black;
-    border: 2px solid white;
     box-sizing: content-box;
 }
 
@@ -42,12 +60,15 @@ select {
     font-family: Quicksand;
     font-size: 20px;
     padding: 8px;
-    border: none;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
 }
 
 /* Logo */
 
 #logo {
+    color: white;
     font-size: 35px;
     font-weight: bold;
     letter-spacing: 0.5rem;
@@ -89,7 +110,7 @@ nav, section {
 .one-half {
     max-width: 500px;
     min-width: 300px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .one-half .main-headline {
@@ -99,7 +120,7 @@ nav, section {
 }
 
 .main-headline .middle {
-    color: grey;
+    color: red;
     font-size: 3rem;
 }
 
@@ -115,10 +136,6 @@ nav, section {
 
 /* Explanation */
 
-#explanation {
-    background-color: dimgray;
-}
-
 #explanation p {
     line-height: 150%;
 }
@@ -126,7 +143,13 @@ nav, section {
 /* Footer */
 
 footer {
+    color: grey;
     margin-top: 30px;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: underline;
 }
 
 footer p {
@@ -134,57 +157,28 @@ footer p {
     font-size: 15px;
 }
 
-footer a, footer p {
-    color: grey;
-}
-
 .social-media-links {
     display: flex;
     justify-content: center;
-    padding: 25px 0 10px 0;
 }
 
-.social-media-links div {
+.social-media-links a img {
     height: 30px;
     width: 30px;
-    margin: 0 5px;
+    margin: 5px;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-#email {
-    background-image: url('./images/email-white.png');
-    transition-duration: 1s;
-}
-
-#email:hover {
-    background-image: url('./images/email-red.png');
-    transition-duration: 1s;
-}
-
-#facebook {
-    background-image: url('./images/facebook-white.png');
-    transition-duration: 1s;
-}
-
-#facebook:hover {
-    transition-duration: 1s;
-    background-image: url('./images/facebook-red.png');
-}
-
-#linkedin {
-    background-image: url('./images/linkedin-white.png');
-    transition-duration: 1s;
-}
-
-#linkedin:hover {
-    transition-duration: 1s;
-    background-image: url('./images/linkedin-red.png');
+    opacity: 0.5;
 }
 
 /* Media Queries */
 
 @media (max-width: 425px) {
+
+    button {
+        font-size: 15px;
+    }
+
     .top {
         font-size: 60px;
     }
