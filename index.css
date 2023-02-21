@@ -1,14 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body {
-    font-family: arial;
-    width: 100%;
-    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: quicksand;
     margin: 0;
 }
 
-section {
-    padding: 20px 5px;
+/* Buttons */
+
+button {
+    border-radius: 5px;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+}
+
+button.red {
+    color: white;
+    background-color: red;
+}
+
+button.black {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    box-sizing: content-box;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Dropdowns */
+
+select {
+    border-radius: 5px;
+    font-family: Quicksand;
+    font-size: 20px;
+    padding: 8px;
+    border: none;
+}
+
+/* Logo */
+
+#logo {
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    width: fit-content;
+}
+
+/* Navigation Bar */
+
+nav {
+    padding: 15px 0;
+    background-color: hsla(0,100%,0%,0.75);
+}
+
+nav .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Sections */
+
+nav, section {
+    padding: 20px;
 }
 
 .content {
@@ -16,251 +78,49 @@ section {
     margin: 0 auto;
 }
 
-p {
-    color: grey;
-}
+/* Hero */
 
-.button-container {
+#hero .content {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-button {
-    font-size: 20px;
-    color: white;
-    background-color: blue;
-    padding: 15px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    transition-duration: 1s;
-    margin: 15px 0;
-}
-
-button:hover, button:active {
-    color: blue;
-    background-color: white;
-    border: 1px solid blue;
-    transition-duration: 0.5s;
-}
-
-/* Banner */
-
-.banner {
-    background-color: blue;
-    color: white;
-    font-size: 15px;
-    padding: 10px;
-}
-
-/* Navigation Bar */
-
-nav {
-    padding-top: 15px;
-}
-
-.logo {
-    font-family: chango;
-    font-size: 25px;
-    color: blue;
-    width: fit-content;
-    margin: 0 auto;
-}
-
-/* Hero Section */
-
-.hero {
-    text-align: center;
-}
-
-h1 {
-    font-size: 30px;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.subheader {
-    color: blue;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 0;
-}
-
-.animation {
-    display: flex;
-    justify-content: center;
-}
-
-.animation img {
-    max-width: 400px;
-    width: 100%;
-}
-
-/* Compensation Section */
-
-.compensation {
-    background-color: #f6f9fa;
-}
-
-.compensation table {
-    text-align: left;
-    margin: 15px auto;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px lightgrey;
-}
-
-.compensation th, .compensation td {
-    padding: 5px;
-}
-
-/* How Does It Work? */
-
-#the-process {
-    background-color: #f6f9fa;
-}
-
-.steps > div {
+.one-half {
     max-width: 500px;
-    margin: 10px auto;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px lightgrey;
+    min-width: 300px;
+    margin-bottom: 50px;
 }
 
-.steps > div:hover {
-    box-shadow: none;
-}
-
-.steps img {
-    width: 30px;
-    padding: 5px;
-    margin: 0;
-}
-
-.steps p {
-    font-size: 15px;
-    text-align: left;
-    margin: 0;
-    padding: 5px;
-    color: black;
-}
-
-/* Past Work */
-
-h2 {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 0;
-}
-
-.dropdown {
-    display: flex;
-    justify-content: center;
-}
-
-.dropdown select {
-    border-radius: 5px;
-    font-size: 15px;
-    padding: 5px;
-    border: none;
-    box-shadow: 1px 1px 5px darkgrey;
-}
-
-#videos {
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#videos > div {
-    width: 150px;
-    text-align: center;
-    margin: 5px;
-}
-
-#videos video {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-}
-
-.brand-logo {
-    margin: 5px 0;
-    height: 60px;
-    width: 100%;
-    padding: 10px 15px;
-    color: black;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.brand-logo img {
-    max-width: 100%;
-    max-height: 100%;
-    filter: grayscale(100%);
-}
-
-/* Reviews Section */
-
-#results {
-    background-color: #f6f9fa;
-}
-
-#reviews {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: left;
-}
-
-.review {
-    width: 150px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    margin: 5px;
-    border-radius: 10px;
-    background-color: white
-}
-.review > img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-.content {
-    padding: 10px;
-}
-.user {
-    display: flex;
-}
-.picture {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-.name {
+.one-half .main-headline {
+    margin: 0 0 20px 0;
+    font-size: 6.5rem;
     font-weight: bold;
-    font-size: 14px;
 }
-.date {
-    font-size: 12px;
-    color: darkgrey;
+
+.main-headline .middle {
+    color: grey;
+    font-size: 3rem;
 }
-.rating {
-    margin: 10px 0;
-    color: blue;
+
+.one-half img {
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
-.quote {
-    font-size: 14px;
+
+.one-half button {
+    margin: 5px;
+}
+
+/* Explanation */
+
+#explanation {
+    background-color: dimgray;
+}
+
+#explanation p {
+    line-height: 150%;
 }
 
 /* Footer */
@@ -292,20 +152,48 @@ footer a, footer p {
     background-size: cover;
 }
 
+#email {
+    background-image: url('./images/email-white.png');
+    transition-duration: 1s;
+}
+
+#email:hover {
+    background-image: url('./images/email-red.png');
+    transition-duration: 1s;
+}
+
 #facebook {
-    background-image: url('./images/facebook-grey.png');
+    background-image: url('./images/facebook-white.png');
+    transition-duration: 1s;
 }
 
 #facebook:hover {
     transition-duration: 1s;
-    background-image: url('./images/facebook-blue.png');
+    background-image: url('./images/facebook-red.png');
 }
 
 #linkedin {
-    background-image: url('./images/linkedin-grey.png');
+    background-image: url('./images/linkedin-white.png');
+    transition-duration: 1s;
 }
 
 #linkedin:hover {
     transition-duration: 1s;
-    background-image: url('./images/linkedin-blue.png');
+    background-image: url('./images/linkedin-red.png');
+}
+
+/* Media Queries */
+
+@media (max-width: 425px) {
+    .top {
+        font-size: 60px;
+    }
+
+    .main-headline .middle {
+        font-size: 30px;
+    }
+
+    .bottom {
+        font-size: 60px;
+    }
 }

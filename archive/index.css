@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+
+body {
+    font-family: arial;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+section {
+    padding: 20px 5px;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+p {
+    color: grey;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 1s;
+    margin: 15px 0;
+}
+
+button:hover, button:active {
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+    transition-duration: 0.5s;
+}
+
+/* Banner */
+
+.banner {
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* Navigation Bar */
+
+nav {
+    padding-top: 15px;
+}
+
+.logo {
+    font-family: chango;
+    font-size: 25px;
+    color: blue;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+
+.hero {
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.subheader {
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.animation {
+    display: flex;
+    justify-content: center;
+}
+
+.animation img {
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Compensation Section */
+
+.compensation {
+    background-color: #f6f9fa;
+}
+
+.compensation table {
+    text-align: left;
+    margin: 15px auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px lightgrey;
+}
+
+.compensation th, .compensation td {
+    padding: 5px;
+}
+
+/* How Does It Work? */
+
+#the-process {
+    background-color: #f6f9fa;
+}
+
+.steps > div {
+    max-width: 500px;
+    margin: 10px auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px lightgrey;
+}
+
+.steps > div:hover {
+    box-shadow: none;
+}
+
+.steps img {
+    width: 30px;
+    padding: 5px;
+    margin: 0;
+}
+
+.steps p {
+    font-size: 15px;
+    text-align: left;
+    margin: 0;
+    padding: 5px;
+    color: black;
+}
+
+/* Past Work */
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown select {
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px darkgrey;
+}
+
+#videos {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#videos > div {
+    width: 150px;
+    text-align: center;
+    margin: 5px;
+}
+
+#videos video {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.brand-logo {
+    margin: 5px 0;
+    height: 60px;
+    width: 100%;
+    padding: 10px 15px;
+    color: black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: grayscale(100%);
+}
+
+/* Reviews Section */
+
+#results {
+    background-color: #f6f9fa;
+}
+
+#reviews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.review {
+    width: 150px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 5px;
+    border-radius: 10px;
+    background-color: white
+}
+.review > img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.content {
+    padding: 10px;
+}
+.user {
+    display: flex;
+}
+.picture {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.name {
+    font-weight: bold;
+    font-size: 14px;
+}
+.date {
+    font-size: 12px;
+    color: darkgrey;
+}
+.rating {
+    margin: 10px 0;
+    color: blue;
+}
+.quote {
+    font-size: 14px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 30px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 15px;
+}
+
+footer a, footer p {
+    color: grey;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 10px 0;
+}
+
+.social-media-links div {
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#facebook {
+    background-image: url('./images/facebook-grey.png');
+}
+
+#facebook:hover {
+    transition-duration: 1s;
+    background-image: url('./images/facebook-blue.png');
+}
+
+#linkedin {
+    background-image: url('./images/linkedin-grey.png');
+}
+
+#linkedin:hover {
+    transition-duration: 1s;
+    background-image: url('./images/linkedin-blue.png');
+}
