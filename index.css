@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-body {
-    color: white;
+html {
     background-color: black;
     font-family: quicksand;
-    margin: 0;
+    padding: 0 20px;
+}
+
+body {
+    color: white;
+    max-width: 1250px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -23,6 +28,12 @@ a {
 /* Span */
 
 span.red {
+    color: red;
+}
+
+/* Text */
+
+.red {
     color: red;
 }
 
@@ -90,7 +101,7 @@ nav .content {
 /* Sections */
 
 nav, section {
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .content {
