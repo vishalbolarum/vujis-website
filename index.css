@@ -3,7 +3,8 @@
 html {
     background-color: black;
     font-family: quicksand;
-    padding: 0 20px;
+    padding: 0 15px;
+    font-size: 15px;
 }
 
 body {
@@ -25,16 +26,14 @@ a {
     text-decoration: none;
 }
 
-/* Span */
-
-span.red {
-    color: red;
-}
-
 /* Text */
 
 .red {
     color: red;
+}
+
+.grey {
+    color: grey;
 }
 
 /* Buttons */
@@ -90,9 +89,6 @@ select {
 nav {
     padding: 15px 0;
     background-color: hsla(0,100%,0%,0.75);
-}
-
-nav .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,32 +97,30 @@ nav .content {
 /* Sections */
 
 nav, section {
-    padding: 20px 0;
-}
-
-.content {
-    max-width: 1000px;
-    margin: 0 auto;
+    padding: 15px 0;
 }
 
 /* Hero */
 
-#hero .content {
+#hero {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 50px;
 }
 
 .one-half {
-    max-width: 500px;
-    min-width: 300px;
-    margin-bottom: 25px;
+    width: 50%;
+    box-sizing: border-box;
 }
 
-.one-half .main-headline {
-    margin: 0 0 20px 0;
-    font-size: 6.5rem;
-    font-weight: bold;
+.one-half h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.one-half button {
+    margin-top: 20px;
 }
 
 .main-headline .middle {
@@ -136,14 +130,73 @@ nav, section {
 
 .one-half img {
     width: 100%;
-    padding: 0 50px;
+    padding: 0 100px;
     box-sizing: border-box;
+}
+
+/* Logos */
+
+#logos {
+    display: flex;
+    border: 1px dashed blue;
+    flex-wrap: wrap;
+}
+
+#logos div {
+    height: 100px;
+    width: 150px;
+    border: 1px dashed blue;
+    display: flex;
+    justify-content: center;
+}
+
+#logos div img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: grayscale(100%);
 }
 
 /* Explanation */
 
 #explanation p {
     line-height: 150%;
+}
+
+/* Steps */
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+.steps > div {
+    border: 3px solid white;
+    border-radius: 15px;
+    width: 140px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+
+.steps > div:hover {
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.steps > div p {
+    margin-bottom: 0;
+}
+
+.steps > div img {
+    filter: invert(100%);
+    width: 65px;
 }
 
 /* Footer */
@@ -179,17 +232,9 @@ footer p {
 
 /* Media Queries */
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
-    .top {
-        font-size: 60px;
-    }
-
-    .main-headline .middle {
-        font-size: 30px;
-    }
-
-    .bottom {
-        font-size: 60px;
+    .one-half {
+        width: 100%;
     }
 }
